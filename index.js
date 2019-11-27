@@ -46,8 +46,12 @@ function init (options) {
 
   // middleware
   return (req, res, next) => {
-    options.bodyParser(req, res, () => {
+    options.bodyParser(req, res, err => {
       res.graph = sendGraph
+
+      if (err) {
+        return next(err)
+      }
 
       const mediaType = 'content-type' in req.headers ? req.headers['content-type'] : options.defaultMediaType
 
