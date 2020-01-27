@@ -1,3 +1,5 @@
+__NOTE__: This library got replaced by https://github.com/rdfjs-base/express-handler
+
 # rdf-body-parser
 
 [![Build Status](https://travis-ci.org/rdf-ext/rdf-body-parser.svg?branch=master)](https://travis-ci.org/rdf-ext/rdf-body-parser)
